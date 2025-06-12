@@ -11,6 +11,10 @@
   --shadow-color: gray;
   --img-width: 150px;
   --padding-small: 2px;
+  --primary-color: #3CBEE2;
+  --secondary-color: #FFFDFD;
+  --accent1-color: #CBD2D0;
+  --accent2-color: #FFF347;
 }
 
 body{
