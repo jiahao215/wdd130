@@ -16,6 +16,25 @@
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
+  display:grid;
+  grid-template-columns: 200px auto;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  padding: 1em;
+  color: #fff;
+  font-family: var(--heading-font);
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #484029;
 }
 
 body {
@@ -80,3 +99,107 @@ article {
     float: right;
     width: 150px;
 }
+
+.history {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 2em;
+  margin: 50px 0;
+}
+
+.history-section {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr; 
+  gap: 20px; 
+  align-items: center;
+  text-align: justify;
+}
+
+.history-img {
+  grid-column: 2 / 3;
+  grid-row: 2; 
+}
+
+.history-section p:first-of-type {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  padding: 0 20px;
+}
+
+.history-section p:last-of-type {
+  grid-column: 3 / 4;
+  grid-row: 2;
+  padding: 0 20px;
+}
+
+.adventures img {
+  max-width: 100%;
+  height: auto;
+}
+
+.adventures {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  overflow-x: hidden;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.history h2,
+.adventures h2 {
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 1em 0;
+}
+
+figure:nth-of-type(odd) {
+  background-color: var(--primary-color);
+  color: var(--nav-link-color);
+  align-self: center;
+}
+
+figure:nth-of-type(even) {
+  background-color: var(--accent2-color);
+  color: var(--nav-link-color);
+  align-self: center;
+}
+
+figcaption{
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #242321;
+  margin-top: 100px;
+}
+
+footer p {
+  color: #fff;
+}
+
+.footer-menu{
+  color: #fff;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.sociallinks img {
+  width: 2rem;
+}
+
+.sociallinks a:hover {
+  background-color: unset;
+}
+
