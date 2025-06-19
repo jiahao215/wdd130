@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with The White Water Rafting Company. Find our contact info, location map, and send us a message or inquiry online.">
+    <meta name="description" content="Contact The White Water Rafting Company to ask questions, check our location, or send a reservation inquiry.">
     <meta name="author" content="JiaHao Shi">
     <title>Contact Us | The White Water Rafting Company</title>
     <link rel="stylesheet" href="styles/rafting.css">
@@ -23,7 +23,10 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+    
     <main>
+        <h1>Contact The White Water Rafting Company</h1>
+
         <section class="contact-info">
             <h2>Contact Information</h2>
             <p><strong>Address:</strong> 123 Rapids Lane, River City, RC 45678</p>
@@ -60,15 +63,25 @@
                 <input type="email" id="email" name="email" required>
 
                 <p>Purpose of Message:</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                <label for="purpose1">
+                    <input type="radio" id="purpose1" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+                <label for="purpose2">
+                    <input type="radio" id="purpose2" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+                <label for="purpose3">
+                    <input type="radio" id="purpose3" name="purpose" value="website">
+                    Website Suggestion
+                </label>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
@@ -93,3 +106,4 @@
     </footer>
 </body>
 </html>
+

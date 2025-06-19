@@ -169,6 +169,16 @@ figcaption {
   padding: 1em 0;
 }
 
+main h1 {
+  position: static;
+  background-color: transparent;
+  color: var(--primary-color);
+  opacity: 1;
+  text-align: left;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
 /*Contact Page Layout*/
 
 .contact-info,
