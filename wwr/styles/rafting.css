@@ -174,9 +174,9 @@ main h1 {
   background-color: transparent;
   color: var(--primary-color);
   opacity: 1;
+  font-size: 2rem;
   text-align: left;
   padding: 1rem 0;
-  font-size: 2rem;
 }
 
 /*Contact Page Layout*/
