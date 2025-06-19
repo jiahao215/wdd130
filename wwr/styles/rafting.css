@@ -179,6 +179,16 @@ main h1 {
   padding: 1rem 0;
 }
 
+.grid-offerings img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
 /*Contact Page Layout*/
 
 .contact-info,
